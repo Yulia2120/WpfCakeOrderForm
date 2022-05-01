@@ -15,9 +15,6 @@
         </Border.Background>
         <StackPanel>
             <Grid>
-                <Grid.Background>
-                    <ImageBrush/>
-                </Grid.Background>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="45"/>
                 </Grid.RowDefinitions>
@@ -40,7 +37,86 @@
                     </RadioButton>
                 </StackPanel>
             </Grid>
-            
+            <TextBlock     TextWrapping="WrapWithOverflow"
+                           Text="Cake Order Form"
+                           Foreground="White"
+                           FontSize="26" FontFamily="Century Gothic"
+                           Margin="90,35,0,0"
+                           HorizontalAlignment="Left"/>
+            <TextBlock     TextWrapping="WrapWithOverflow" 
+                           Text="Please fill in yourinformation and well be sending your order in no time."
+                           Width="400" Height="50"
+                           Foreground="White"
+                           FontSize="12" FontFamily="Century Gothic"
+                           Margin="90,10,0,0" HorizontalAlignment="Left"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*"/>
+                    <ColumnDefinition Width="1.4*"/>
+                    <ColumnDefinition Width="1.4*"/>
+                    <ColumnDefinition Width="2.4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+
+                </Grid.RowDefinitions>
+              
+                    <TextBlock Grid.Row="0" Text="Name" Margin="90,0,0,0" 
+                               FontSize="14" 
+                               Foreground="White"
+                               FontFamily="Century Gothic"/>
+               
+                <StackPanel Grid.Column="1" Margin="0,0,0,0">
+                    <TextBox Padding="2" Foreground="Gray"
+                     TextWrapping="WrapWithOverflow"
+                     Text="First Name"
+                     FontSize="12" FontFamily="Century Gothic"
+                     VerticalAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     BorderBrush="White"
+                    Margin="0,0,10,0"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <TextBox Padding="2" Foreground="Gray"
+                     TextWrapping="WrapWithOverflow"
+                     Text="Lastst Name"
+                     FontSize="12" FontFamily="Century Gothic"
+                     VerticalAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     BorderBrush="White"
+                     Margin="0,0,10,0"/>
+                </StackPanel>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Email" Margin="90,30,0,0" 
+                               FontSize="14" 
+                               Foreground="White"
+                               FontFamily="Century Gothic"/>
+                <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,30,0,0">
+                    <TextBox Padding="2" Foreground="Gray"
+                     TextWrapping="WrapWithOverflow"
+                     FontSize="12" FontFamily="Century Gothic"
+                     VerticalAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     BorderBrush="White"
+                    Margin="0,0,10,0"/>
+                </StackPanel>
+                <TextBlock Grid.Row="1" Grid.Column="2" Text ="Quantity" Margin="0,30,0,0" 
+                               FontSize="14" 
+                               Width="Auto"
+                               Foreground="White"
+                               FontFamily="Century Gothic"/>
+                <StackPanel Grid.Column="2" Grid.Row="1" Margin="70,30,0,0">
+                    <TextBox Padding="2" Foreground="Gray"
+                     TextWrapping="WrapWithOverflow"
+                     FontSize="12" FontFamily="Century Gothic"
+                     VerticalAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     BorderBrush="White"
+                    Margin="0,0,10,0"/>
+                </StackPanel>
+
+
+            </Grid>
         </StackPanel>
     </Border>
 </Window>
