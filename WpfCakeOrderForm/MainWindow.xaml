@@ -13,6 +13,34 @@
         <Border.Background>
             <ImageBrush ImageSource="/Background.jpg"/>
         </Border.Background>
-
+        <StackPanel>
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush/>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+                <Canvas Grid.ColumnSpan ="4" Background="#F5F5F5"/>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton GroupName="Radio" Margin="10,10,0,20">
+                        <RadioButton.Background>
+                            <ImageBrush ImageSource="/Untitled-2.png" Stretch="None"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton GroupName="Radio" Margin="4,10,0,20">
+                        <RadioButton.Background>
+                            <ImageBrush ImageSource="/Untitled-1.png" Stretch="None"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton GroupName="Radio" Margin="4,10,0,20">
+                        <RadioButton.Background>
+                            <ImageBrush ImageSource="/Untitled-3.png" Stretch="None"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                </StackPanel>
+            </Grid>
+            
+        </StackPanel>
     </Border>
 </Window>
