@@ -11,42 +11,42 @@
         WindowStartupLocation="CenterScreen">
     <Border>
         <Border.Background>
-            <ImageBrush ImageSource="/Background.jpg" Stretch="Fill"/>
+            <ImageBrush ImageSource="images/Background.jpg" Stretch="Fill"/>
         </Border.Background>
         <StackPanel>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="45"/>
                 </Grid.RowDefinitions>
-                <Canvas Background="White"/>
+                <Canvas Background="#F5F5F5"/>
                 <StackPanel Orientation="Horizontal">
                     <RadioButton GroupName="Radio" Margin="10,10,0,20">
                         <RadioButton.Background>
-                            <ImageBrush ImageSource="/Untitled-2.png" Stretch="None"/>
+                            <ImageBrush ImageSource="images/Untitled-2.png" Stretch="None"/>
                         </RadioButton.Background>
                     </RadioButton>
                     <RadioButton GroupName="Radio" Margin="4,10,0,20">
                         <RadioButton.Background>
-                            <ImageBrush ImageSource="/Untitled-1.png" Stretch="None"/>
+                            <ImageBrush ImageSource="images/Untitled-1.png" Stretch="None"/>
                         </RadioButton.Background>
                     </RadioButton>
                     <RadioButton GroupName="Radio" Margin="4,10,0,20">
                         <RadioButton.Background>
-                            <ImageBrush ImageSource="/Untitled-3.png" Stretch="None"/>
+                            <ImageBrush ImageSource="images/Untitled-3.png" Stretch="None"/>
                         </RadioButton.Background>
                     </RadioButton>
                 </StackPanel>
             </Grid>
             <TextBlock     TextWrapping="WrapWithOverflow"
                            Text="Cake Order Form"
-                           Foreground="White"
+                           Foreground="#F5F5F5"
                            FontSize="26" FontFamily="Century Gothic"
                            Margin="90,35,0,0"
                            HorizontalAlignment="Left"/>
             <TextBlock     TextWrapping="WrapWithOverflow" 
                            Text="Please fill in yourinformation and well be sending your order in no time."
                            Width="400" Height="50"
-                           Foreground="White"
+                           Foreground="#F5F5F5"
                            FontSize="12" FontFamily="Century Gothic"
                            Margin="90,10,0,0" HorizontalAlignment="Left"/>
             <Grid>
@@ -65,12 +65,12 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-              
-                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Name" Margin="90,0,0,0" 
+
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="Name" Margin="90,0,0,0" 
                                FontSize="13" 
-                               Foreground="White"
+                               Foreground="#F5F5F5"
                                FontFamily="Century Gothic"/>
-               
+
                 <StackPanel Grid.Column="1" Margin="0,0,0,0">
                     <TextBox Padding="2" Foreground="Gray"
                      TextWrapping="WrapWithOverflow"
@@ -93,7 +93,7 @@
                 </StackPanel>
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="Email" Margin="90,20,0,0" 
                                FontSize="13" 
-                               Foreground="White"
+                               Foreground="#F5F5F5"
                                FontFamily="Century Gothic"/>
                 <StackPanel Grid.Column="1" Grid.Row="1" Margin="0,20,0,0">
                     <TextBox Padding="2" Foreground="Gray"
@@ -107,7 +107,7 @@
                 <TextBlock Grid.Row="1" Grid.Column="2" Text ="Quantity" Margin="0,20,0,0" 
                                FontSize="13" 
                                Width="Auto"
-                               Foreground="White"
+                               Foreground="#F5F5F5"
                                FontFamily="Century Gothic"/>
                 <StackPanel Grid.Column="2" Grid.Row="1" Margin="70,20,0,0">
                     <TextBox Padding="2" Foreground="Gray"
@@ -118,96 +118,96 @@
                      BorderBrush="White"
                     Margin="0,0,10,0"/>
                 </StackPanel>
-                
-                <TextBlock   Grid.Row="2"  Grid.Column="0" Text="Shipping" Margin="90,20,0,0" 
+
+                <TextBlock   Grid.Row="2"  Grid.Column="0" Text="Shipping Address" Margin="90,15,0,0" 
                                FontSize="13" 
-                               Foreground="White"
-                               FontFamily="Century Gothic"/>
-                <TextBlock    Grid.Row="3" Grid.Column="0" Text="Address" Margin="90,0,0,0" 
-                               FontSize="13" 
-                               Foreground="White"
+                             TextWrapping="Wrap"
+                               Foreground="#F5F5F5"
                                FontFamily="Century Gothic"/>
 
-                <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" Margin="0,20,0,0">
+                <StackPanel Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Margin="0,20,0,0">
                     <TextBox Padding="2" Foreground="Gray"
+                     Text="Street Address"
                      TextWrapping="WrapWithOverflow"
                      FontSize="12" FontFamily="Century Gothic"
                      VerticalAlignment="Center"
                      VerticalContentAlignment="Center"
                      BorderBrush="White"
                     Margin="0,0,10,0"/>
-                    
+
                 </StackPanel>
-                <StackPanel Grid.Column="1" Grid.Row="4">
+                <StackPanel Grid.Column="1" Grid.Row="3">
                     <TextBox Padding="2" Foreground="Gray"
-                     TextWrapping="WrapWithOverflow"
+                   
                      Text="City"
                      FontSize="12" FontFamily="Century Gothic"
                      VerticalAlignment="Center"
                      VerticalContentAlignment="Center"
                      BorderBrush="White"
-                    Margin="0,0,10,0"/>
+                    Margin="0,5,10,0"/>
                 </StackPanel>
-                <StackPanel Grid.Column="2" Grid.Row="4">
+                <StackPanel Grid.Column="2" Grid.Row="3">
                     <TextBox Padding="2" Foreground="Gray"
-                     TextWrapping="WrapWithOverflow"
+                 
                      Text="Country"
                      FontSize="12" FontFamily="Century Gothic"
                      VerticalAlignment="Center"
                      VerticalContentAlignment="Center"
                      BorderBrush="White"
-                     Margin="0,0,10,0"/>
+                     Margin="0,5,10,0"/>
                 </StackPanel>
-                <TextBlock Grid.Row="5" Grid.Column="0" Text="Select your products" Margin="90,30,0,0" 
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="Select your products" Margin="90,30,0,0" 
                                FontSize="13"
-                               Foreground="White"
+                               TextWrapping="Wrap"
+                               Foreground="#F5F5F5"
                                FontFamily="Century Gothic"/>
-                <Grid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2">
+                <Grid Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
-                    
-                     
                     </Grid.ColumnDefinitions>
-            
+
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
-                        <!--<RowDefinition/>-->
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
 
                     <StackPanel Grid.Column="0" Margin="0,30,0,0" >
+                        <CheckBox HorizontalAlignment="Left" Background="#FFCEE192" IsChecked="True"/>
+                        <Image Height="90" Width="90"
+                               Margin="10,-35,0,0"
+                               HorizontalAlignment="Left"
+                               Stretch="Fill" Source="/Microsoft(1).png"/>
                         <CheckBox HorizontalAlignment="Left"/>
-                        <Image Height="80" Width="80"
+                        <Image Height="90" Width="90" 
                                Margin="10,-30,0,0"
                                HorizontalAlignment="Left"
-                               Stretch="Fill" Source="/Microsoft(1).png"/>
-                        <CheckBox HorizontalAlignment="Left"/>
-                        <Image Height="80" Width="80" 
-                               Margin="10,-20,0,0"
-                               HorizontalAlignment="Left"
-                               Stretch="Fill" Source="/Microsoft(1).png"/>
+                               Stretch="Fill" Source="/Microsoft(2).png" StretchDirection="Both"/>
                     </StackPanel>
 
                     <StackPanel Grid.Column="1" Margin="0,30,0,0">
                         <CheckBox HorizontalAlignment="Left"/>
-                        <Image Height="80" Width="80" 
-                               Margin="10,-30,0,0"
+                        <Image Height="90" Width="90" 
+                               Margin="10,-40,0,0"
                                HorizontalAlignment="Left"
-                               Stretch="Fill" Source="/Microsoft(1).png"/>
+                               Stretch="Fill" Source="/Microsoft(4).png"/>
                         <CheckBox HorizontalAlignment="Left"/>
-                        <Image Height="80" Width="80" 
-                               Margin="10,-20,0,0"
+                        <Image Height="90" Width="90" 
+                               Margin="10,-25,0,0"
                                HorizontalAlignment="Left"
-                               Stretch="Fill" Source="/Microsoft(1).png"/>
+                               Stretch="Fill" Source="/Microsoft(3).png"/>
                     </StackPanel>
-
-
-
-
-
-
                 </Grid>
+
+                <Button Grid.Column="0" Grid.Row="5" Margin="90,5,0,0"
+                Background="#2B7190" Foreground="#F5F5F5" BorderThickness="0"
+                Content="PURCHASE" Padding="4"
+                FontFamily="Century Gothic" />
+
+
+
+
 
 
             </Grid>
