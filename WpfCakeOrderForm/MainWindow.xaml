@@ -140,12 +140,12 @@
                         <Image Height="90" Width="90"
                                Margin="10,-35,0,0"
                                HorizontalAlignment="Left"
-                               Stretch="Fill" Source="/Microsoft(1).png"/>
+                               Stretch="Fill" Source="images/Microsoft(1).png"/>
                         <CheckBox HorizontalAlignment="Left"/>
                         <Image Height="90" Width="90" 
                                Margin="10,-30,0,0"
                                HorizontalAlignment="Left"
-                               Stretch="Fill" Source="/Microsoft(2).png" StretchDirection="Both"/>
+                               Stretch="Fill" Source="images/Microsoft(2).png" StretchDirection="Both"/>
                     </StackPanel>
 
                     <StackPanel Grid.Column="1" Margin="0,30,0,0">
@@ -153,12 +153,12 @@
                         <Image Height="90" Width="90" 
                                Margin="10,-40,0,0"
                                HorizontalAlignment="Left"
-                               Stretch="Fill" Source="/Microsoft(4).png"/>
+                               Stretch="Fill" Source="images/Microsoft(4).png"/>
                         <CheckBox HorizontalAlignment="Left"/>
                         <Image Height="90" Width="90" 
                                Margin="10,-25,0,0"
                                HorizontalAlignment="Left"
-                               Stretch="Fill" Source="/Microsoft(3).png"/>
+                               Stretch="Fill" Source="images/Microsoft(3).png"/>
                     </StackPanel>
                 </Grid>
 

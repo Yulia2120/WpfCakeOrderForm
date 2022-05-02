@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="Background.jpg" />
+    <None Remove="images\Microsoft%281%29.png" />
     <None Remove="Microsoft%281%29.png" />
     <None Remove="Microsoft%282%29.png" />
     <None Remove="Microsoft%283%29.png" />
@@ -24,10 +25,9 @@
     <Resource Include="images\Untitled-1.png" />
     <Resource Include="images\Untitled-2.png" />
     <Resource Include="images\Untitled-3.png" />
-    <Resource Include="Microsoft(1).png" />
-    <Resource Include="Microsoft(2).png" />
-    <Resource Include="Microsoft(3).png" />
-    <Resource Include="Microsoft(4).png" />
+    <Resource Include="images\Microsoft%282%29.png" />
+    <Resource Include="images\Microsoft%283%29.png" />
+    <Resource Include="images\Microsoft%284%29.png" />
   </ItemGroup>
 
 </Project>
